@@ -120,6 +120,7 @@
             this.btnPaciente.Text = "Paciente";
             this.btnPaciente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPaciente.UseVisualStyleBackColor = false;
+            this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
             // 
             // pbTelaPrincipal
             // 

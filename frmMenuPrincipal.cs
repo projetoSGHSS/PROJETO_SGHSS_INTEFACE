@@ -21,5 +21,11 @@ namespace projetoSGHSS
         {
             Application.Exit();
         }
+
+        private void btnPaciente_Click(object sender, EventArgs e)
+        {
+            frmPaciente fp = new frmPaciente();
+            fp.ShowDialog();
+        }
     }
 }
