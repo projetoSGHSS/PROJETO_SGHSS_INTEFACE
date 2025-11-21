@@ -69,7 +69,7 @@
             this.txtSenhaHashUsuario.Location = new System.Drawing.Point(12, 460);
             this.txtSenhaHashUsuario.Name = "txtSenhaHashUsuario";
             this.txtSenhaHashUsuario.Size = new System.Drawing.Size(432, 35);
-            this.txtSenhaHashUsuario.TabIndex = 2;
+            this.txtSenhaHashUsuario.TabIndex = 3;
             // 
             // txtEmailUsuario
             // 
@@ -77,7 +77,7 @@
             this.txtEmailUsuario.Location = new System.Drawing.Point(12, 376);
             this.txtEmailUsuario.Name = "txtEmailUsuario";
             this.txtEmailUsuario.Size = new System.Drawing.Size(432, 35);
-            this.txtEmailUsuario.TabIndex = 3;
+            this.txtEmailUsuario.TabIndex = 2;
             // 
             // cbTipoUsuario
             // 
@@ -164,11 +164,11 @@
             this.btnEntrar.Location = new System.Drawing.Point(460, 351);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(305, 81);
-            this.btnEntrar.TabIndex = 11;
+            this.btnEntrar.TabIndex = 5;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.button1_Click);
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnSair
             // 
@@ -179,11 +179,11 @@
             this.btnSair.Location = new System.Drawing.Point(625, 438);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(140, 81);
-            this.btnSair.TabIndex = 12;
+            this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSair.UseVisualStyleBackColor = false;
-            this.btnSair.Click += new System.EventHandler(this.button2_Click);
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnCadastrarUsuario
             // 
@@ -194,11 +194,11 @@
             this.btnCadastrarUsuario.Location = new System.Drawing.Point(460, 438);
             this.btnCadastrarUsuario.Name = "btnCadastrarUsuario";
             this.btnCadastrarUsuario.Size = new System.Drawing.Size(159, 81);
-            this.btnCadastrarUsuario.TabIndex = 13;
+            this.btnCadastrarUsuario.TabIndex = 6;
             this.btnCadastrarUsuario.Text = "Novo";
             this.btnCadastrarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadastrarUsuario.UseVisualStyleBackColor = false;
-            this.btnCadastrarUsuario.Click += new System.EventHandler(this.button3_Click);
+            this.btnCadastrarUsuario.Click += new System.EventHandler(this.btnCadastrarUsuario_Click);
             // 
             // frmLogin
             // 

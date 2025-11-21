@@ -63,9 +63,59 @@ namespace projetoSGHSS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconeAdm {
+            get {
+                object obj = ResourceManager.GetObject("iconeAdm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconePrescricao {
+            get {
+                object obj = ResourceManager.GetObject("iconePrescricao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconeProfissional {
+            get {
+                object obj = ResourceManager.GetObject("iconeProfissional", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconeTelaLogin {
             get {
                 object obj = ResourceManager.GetObject("iconeTelaLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconeUsuarios {
+            get {
+                object obj = ResourceManager.GetObject("iconeUsuarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconeUsuariosMaior {
+            get {
+                object obj = ResourceManager.GetObject("iconeUsuariosMaior", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

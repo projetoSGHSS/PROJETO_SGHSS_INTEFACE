@@ -22,19 +22,23 @@ namespace projetoSGHSS
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCadastrarUsuario_Click(object sender, EventArgs e)
         {
-
+            frmCadastroUsuario fcaus = new frmCadastroUsuario();
+            fcaus.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
 
+            frmMenuPrincipal fmp = new frmMenuPrincipal();
+            fmp.Show();
         }
     }
 }
