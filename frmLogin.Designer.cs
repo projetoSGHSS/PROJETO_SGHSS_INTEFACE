@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
             this.txtSenhaHashUsuario = new System.Windows.Forms.TextBox();
             this.txtEmailUsuario = new System.Windows.Forms.TextBox();
@@ -39,53 +38,48 @@
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblTituloMaior = new System.Windows.Forms.Label();
             this.lblTituloMenor = new System.Windows.Forms.Label();
-            this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnCadastrarUsuario = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.pbTelaLogin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbTelaLogin)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbTelaLogin
-            // 
-            this.pbTelaLogin.Image = global::projetoSGHSS.Properties.Resources.iconeTelaLogin;
-            this.pbTelaLogin.Location = new System.Drawing.Point(12, 12);
-            this.pbTelaLogin.Name = "pbTelaLogin";
-            this.pbTelaLogin.Size = new System.Drawing.Size(198, 203);
-            this.pbTelaLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbTelaLogin.TabIndex = 0;
-            this.pbTelaLogin.TabStop = false;
             // 
             // txtNomeUsuario
             // 
             this.txtNomeUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeUsuario.Location = new System.Drawing.Point(12, 292);
+            this.txtNomeUsuario.Location = new System.Drawing.Point(8, 190);
+            this.txtNomeUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNomeUsuario.Name = "txtNomeUsuario";
-            this.txtNomeUsuario.Size = new System.Drawing.Size(432, 35);
+            this.txtNomeUsuario.Size = new System.Drawing.Size(289, 26);
             this.txtNomeUsuario.TabIndex = 1;
             // 
             // txtSenhaHashUsuario
             // 
             this.txtSenhaHashUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenhaHashUsuario.Location = new System.Drawing.Point(12, 460);
+            this.txtSenhaHashUsuario.Location = new System.Drawing.Point(8, 299);
+            this.txtSenhaHashUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSenhaHashUsuario.Name = "txtSenhaHashUsuario";
-            this.txtSenhaHashUsuario.Size = new System.Drawing.Size(432, 35);
+            this.txtSenhaHashUsuario.Size = new System.Drawing.Size(289, 26);
             this.txtSenhaHashUsuario.TabIndex = 3;
             // 
             // txtEmailUsuario
             // 
             this.txtEmailUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailUsuario.Location = new System.Drawing.Point(12, 376);
+            this.txtEmailUsuario.Location = new System.Drawing.Point(8, 244);
+            this.txtEmailUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmailUsuario.Name = "txtEmailUsuario";
-            this.txtEmailUsuario.Size = new System.Drawing.Size(432, 35);
+            this.txtEmailUsuario.Size = new System.Drawing.Size(289, 26);
             this.txtEmailUsuario.TabIndex = 2;
             // 
             // cbTipoUsuario
             // 
             this.cbTipoUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoUsuario.FormattingEnabled = true;
-            this.cbTipoUsuario.Location = new System.Drawing.Point(12, 544);
+            this.cbTipoUsuario.Location = new System.Drawing.Point(8, 354);
+            this.cbTipoUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbTipoUsuario.Name = "cbTipoUsuario";
-            this.cbTipoUsuario.Size = new System.Drawing.Size(432, 35);
+            this.cbTipoUsuario.Size = new System.Drawing.Size(289, 26);
             this.cbTipoUsuario.TabIndex = 4;
             // 
             // lblUsuario
@@ -93,9 +87,10 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblUsuario.Location = new System.Drawing.Point(7, 260);
+            this.lblUsuario.Location = new System.Drawing.Point(5, 169);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(109, 29);
+            this.lblUsuario.Size = new System.Drawing.Size(75, 19);
             this.lblUsuario.TabIndex = 5;
             this.lblUsuario.Text = "Usuário:";
             // 
@@ -104,9 +99,10 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblEmail.Location = new System.Drawing.Point(7, 344);
+            this.lblEmail.Location = new System.Drawing.Point(5, 224);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(92, 29);
+            this.lblEmail.Size = new System.Drawing.Size(62, 19);
             this.lblEmail.TabIndex = 6;
             this.lblEmail.Text = "E-mail:";
             // 
@@ -115,9 +111,10 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblSenha.Location = new System.Drawing.Point(7, 428);
+            this.lblSenha.Location = new System.Drawing.Point(5, 278);
+            this.lblSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(92, 29);
+            this.lblSenha.Size = new System.Drawing.Size(64, 19);
             this.lblSenha.TabIndex = 7;
             this.lblSenha.Text = "Senha:";
             // 
@@ -126,9 +123,10 @@
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipo.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTipo.Location = new System.Drawing.Point(7, 512);
+            this.lblTipo.Location = new System.Drawing.Point(5, 333);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(72, 29);
+            this.lblTipo.Size = new System.Drawing.Size(49, 19);
             this.lblTipo.TabIndex = 8;
             this.lblTipo.Text = "Tipo:";
             // 
@@ -137,9 +135,10 @@
             this.lblTituloMaior.AutoSize = true;
             this.lblTituloMaior.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTituloMaior.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTituloMaior.Location = new System.Drawing.Point(383, 46);
+            this.lblTituloMaior.Location = new System.Drawing.Point(255, 30);
+            this.lblTituloMaior.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTituloMaior.Name = "lblTituloMaior";
-            this.lblTituloMaior.Size = new System.Drawing.Size(192, 56);
+            this.lblTituloMaior.Size = new System.Drawing.Size(127, 37);
             this.lblTituloMaior.TabIndex = 9;
             this.lblTituloMaior.Text = "SGHSS";
             // 
@@ -148,27 +147,13 @@
             this.lblTituloMenor.AutoSize = true;
             this.lblTituloMenor.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTituloMenor.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lblTituloMenor.Location = new System.Drawing.Point(216, 120);
+            this.lblTituloMenor.Location = new System.Drawing.Point(144, 78);
+            this.lblTituloMenor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTituloMenor.Name = "lblTituloMenor";
-            this.lblTituloMenor.Size = new System.Drawing.Size(562, 66);
+            this.lblTituloMenor.Size = new System.Drawing.Size(383, 44);
             this.lblTituloMenor.TabIndex = 10;
             this.lblTituloMenor.Text = "Sistema de Gerenciamento de Hospitais \r\ne Serviços de Saúde";
             this.lblTituloMenor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnEntrar
-            // 
-            this.btnEntrar.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEntrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(460, 351);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(305, 81);
-            this.btnEntrar.TabIndex = 5;
-            this.btnEntrar.Text = "Entrar";
-            this.btnEntrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnSair
             // 
@@ -176,9 +161,12 @@
             this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(625, 438);
+            this.btnSair.Image = global::projetoSGHSS.Properties.Resources.fechar;
+            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSair.Location = new System.Drawing.Point(417, 285);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(140, 81);
+            this.btnSair.Size = new System.Drawing.Size(93, 53);
             this.btnSair.TabIndex = 7;
             this.btnSair.Text = "Sair";
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,21 +179,53 @@
             this.btnCadastrarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastrarUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarUsuario.Location = new System.Drawing.Point(460, 438);
+            this.btnCadastrarUsuario.Image = global::projetoSGHSS.Properties.Resources.usuarioMenor;
+            this.btnCadastrarUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCadastrarUsuario.Location = new System.Drawing.Point(307, 285);
+            this.btnCadastrarUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrarUsuario.Name = "btnCadastrarUsuario";
-            this.btnCadastrarUsuario.Size = new System.Drawing.Size(159, 81);
+            this.btnCadastrarUsuario.Size = new System.Drawing.Size(106, 53);
             this.btnCadastrarUsuario.TabIndex = 6;
             this.btnCadastrarUsuario.Text = "Novo";
             this.btnCadastrarUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadastrarUsuario.UseVisualStyleBackColor = false;
             this.btnCadastrarUsuario.Click += new System.EventHandler(this.btnCadastrarUsuario_Click);
             // 
+            // btnEntrar
+            // 
+            this.btnEntrar.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEntrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Image = global::projetoSGHSS.Properties.Resources.salvar;
+            this.btnEntrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEntrar.Location = new System.Drawing.Point(307, 228);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(203, 53);
+            this.btnEntrar.TabIndex = 5;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            // 
+            // pbTelaLogin
+            // 
+            this.pbTelaLogin.Image = global::projetoSGHSS.Properties.Resources.iconeTelaLogin;
+            this.pbTelaLogin.Location = new System.Drawing.Point(8, 8);
+            this.pbTelaLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.pbTelaLogin.Name = "pbTelaLogin";
+            this.pbTelaLogin.Size = new System.Drawing.Size(132, 132);
+            this.pbTelaLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbTelaLogin.TabIndex = 0;
+            this.pbTelaLogin.TabStop = false;
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(777, 614);
+            this.ClientSize = new System.Drawing.Size(518, 399);
             this.Controls.Add(this.btnCadastrarUsuario);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
@@ -221,6 +241,7 @@
             this.Controls.Add(this.txtNomeUsuario);
             this.Controls.Add(this.pbTelaLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SGHSS - Tela de Login";
