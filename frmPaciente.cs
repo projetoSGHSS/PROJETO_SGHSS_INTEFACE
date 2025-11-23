@@ -16,5 +16,11 @@ namespace projetoSGHSS
         {
             InitializeComponent();
         }
+
+        private void btnAbrirTeleconsulta_Click(object sender, EventArgs e)
+        {
+            frmTeleConsulta ftc = new frmTeleConsulta();
+            ftc.ShowDialog();
+        }
     }
 }

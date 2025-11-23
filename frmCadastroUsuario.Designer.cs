@@ -34,7 +34,6 @@
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.cbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.txtEmailUsuario = new System.Windows.Forms.TextBox();
             this.txtSenhaHashUsuario = new System.Windows.Forms.TextBox();
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtTipo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +60,7 @@
             this.lblTituloMenor.Location = new System.Drawing.Point(168, 49);
             this.lblTituloMenor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTituloMenor.Name = "lblTituloMenor";
-            this.lblTituloMenor.Size = new System.Drawing.Size(390, 33);
+            this.lblTituloMenor.Size = new System.Drawing.Size(273, 22);
             this.lblTituloMenor.TabIndex = 12;
             this.lblTituloMenor.Text = "Cadastro de novos usuários";
             this.lblTituloMenor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,7 +73,7 @@
             this.lblTituloMaior.Location = new System.Drawing.Point(243, 9);
             this.lblTituloMaior.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTituloMaior.Name = "lblTituloMaior";
-            this.lblTituloMaior.Size = new System.Drawing.Size(192, 56);
+            this.lblTituloMaior.Size = new System.Drawing.Size(127, 37);
             this.lblTituloMaior.TabIndex = 11;
             this.lblTituloMaior.Text = "SGHSS";
             // 
@@ -85,7 +85,7 @@
             this.lblTipo.Location = new System.Drawing.Point(231, 224);
             this.lblTipo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(72, 29);
+            this.lblTipo.Size = new System.Drawing.Size(49, 19);
             this.lblTipo.TabIndex = 20;
             this.lblTipo.Text = "Tipo:";
             // 
@@ -97,7 +97,7 @@
             this.lblSenha.Location = new System.Drawing.Point(8, 224);
             this.lblSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(92, 29);
+            this.lblSenha.Size = new System.Drawing.Size(64, 19);
             this.lblSenha.TabIndex = 19;
             this.lblSenha.Text = "Senha:";
             // 
@@ -109,7 +109,7 @@
             this.lblEmail.Location = new System.Drawing.Point(231, 166);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(92, 29);
+            this.lblEmail.Size = new System.Drawing.Size(62, 19);
             this.lblEmail.TabIndex = 18;
             this.lblEmail.Text = "E-mail:";
             // 
@@ -121,19 +121,9 @@
             this.lblUsuario.Location = new System.Drawing.Point(8, 166);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(109, 29);
+            this.lblUsuario.Size = new System.Drawing.Size(75, 19);
             this.lblUsuario.TabIndex = 17;
             this.lblUsuario.Text = "Usuário:";
-            // 
-            // cbTipoUsuario
-            // 
-            this.cbTipoUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipoUsuario.FormattingEnabled = true;
-            this.cbTipoUsuario.Location = new System.Drawing.Point(235, 245);
-            this.cbTipoUsuario.Margin = new System.Windows.Forms.Padding(2);
-            this.cbTipoUsuario.Name = "cbTipoUsuario";
-            this.cbTipoUsuario.Size = new System.Drawing.Size(206, 35);
-            this.cbTipoUsuario.TabIndex = 7;
             // 
             // txtEmailUsuario
             // 
@@ -141,7 +131,7 @@
             this.txtEmailUsuario.Location = new System.Drawing.Point(235, 187);
             this.txtEmailUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmailUsuario.Name = "txtEmailUsuario";
-            this.txtEmailUsuario.Size = new System.Drawing.Size(206, 35);
+            this.txtEmailUsuario.Size = new System.Drawing.Size(206, 26);
             this.txtEmailUsuario.TabIndex = 5;
             // 
             // txtSenhaHashUsuario
@@ -150,7 +140,7 @@
             this.txtSenhaHashUsuario.Location = new System.Drawing.Point(12, 245);
             this.txtSenhaHashUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenhaHashUsuario.Name = "txtSenhaHashUsuario";
-            this.txtSenhaHashUsuario.Size = new System.Drawing.Size(206, 35);
+            this.txtSenhaHashUsuario.Size = new System.Drawing.Size(206, 26);
             this.txtSenhaHashUsuario.TabIndex = 6;
             // 
             // txtNomeUsuario
@@ -159,7 +149,7 @@
             this.txtNomeUsuario.Location = new System.Drawing.Point(12, 187);
             this.txtNomeUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeUsuario.Name = "txtNomeUsuario";
-            this.txtNomeUsuario.Size = new System.Drawing.Size(206, 35);
+            this.txtNomeUsuario.Size = new System.Drawing.Size(206, 26);
             this.txtNomeUsuario.TabIndex = 4;
             // 
             // dgvCadastroUsuario
@@ -188,7 +178,7 @@
             this.rbTipo.AutoSize = true;
             this.rbTipo.Location = new System.Drawing.Point(183, 21);
             this.rbTipo.Name = "rbTipo";
-            this.rbTipo.Size = new System.Drawing.Size(118, 31);
+            this.rbTipo.Size = new System.Drawing.Size(79, 22);
             this.rbTipo.TabIndex = 2;
             this.rbTipo.TabStop = true;
             this.rbTipo.Text = "por tipo";
@@ -199,7 +189,7 @@
             this.rbNome.AutoSize = true;
             this.rbNome.Location = new System.Drawing.Point(6, 21);
             this.rbNome.Name = "rbNome";
-            this.rbNome.Size = new System.Drawing.Size(139, 31);
+            this.rbNome.Size = new System.Drawing.Size(92, 22);
             this.rbNome.TabIndex = 1;
             this.rbNome.TabStop = true;
             this.rbNome.Text = "por nome";
@@ -209,7 +199,7 @@
             // 
             this.txtBuscar.Location = new System.Drawing.Point(6, 49);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(256, 35);
+            this.txtBuscar.Size = new System.Drawing.Size(256, 26);
             this.txtBuscar.TabIndex = 3;
             // 
             // btnApagar
@@ -227,6 +217,7 @@
             this.btnApagar.Text = "Apagar";
             this.btnApagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnEditar
             // 
@@ -243,6 +234,7 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnSalvar
             // 
@@ -259,6 +251,7 @@
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // pictureBox1
             // 
@@ -270,12 +263,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // txtTipo
+            // 
+            this.txtTipo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipo.Location = new System.Drawing.Point(235, 245);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(206, 26);
+            this.txtTipo.TabIndex = 26;
+            // 
             // frmCadastroUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(452, 500);
+            this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
@@ -285,7 +288,6 @@
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.cbTipoUsuario);
             this.Controls.Add(this.txtEmailUsuario);
             this.Controls.Add(this.txtSenhaHashUsuario);
             this.Controls.Add(this.txtNomeUsuario);
@@ -316,7 +318,6 @@
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.ComboBox cbTipoUsuario;
         private System.Windows.Forms.TextBox txtEmailUsuario;
         private System.Windows.Forms.TextBox txtSenhaHashUsuario;
         private System.Windows.Forms.TextBox txtNomeUsuario;
@@ -328,5 +329,6 @@
         private System.Windows.Forms.RadioButton rbTipo;
         private System.Windows.Forms.RadioButton rbNome;
         private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.TextBox txtTipo;
     }
 }

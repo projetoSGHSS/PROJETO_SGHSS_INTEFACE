@@ -28,65 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAbrirPrescricao = new System.Windows.Forms.Button();
+            this.btnAbrirTeleconsulta = new System.Windows.Forms.Button();
+            this.btnAgendarTeleConsulta = new System.Windows.Forms.Button();
+            this.btnAgendarConsulta = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button4
+            // btnAbrirPrescricao
             // 
-            this.button4.BackColor = System.Drawing.Color.Azure;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(371, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 86);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Abrir Prescrição";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAbrirPrescricao.BackColor = System.Drawing.Color.Azure;
+            this.btnAbrirPrescricao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirPrescricao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAbrirPrescricao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrirPrescricao.Location = new System.Drawing.Point(371, 127);
+            this.btnAbrirPrescricao.Name = "btnAbrirPrescricao";
+            this.btnAbrirPrescricao.Size = new System.Drawing.Size(175, 86);
+            this.btnAbrirPrescricao.TabIndex = 9;
+            this.btnAbrirPrescricao.Text = "Abrir Prescrição";
+            this.btnAbrirPrescricao.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnAbrirTeleconsulta
             // 
-            this.button3.BackColor = System.Drawing.Color.LightYellow;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(190, 127);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 86);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Abrir Teleconsulta";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAbrirTeleconsulta.BackColor = System.Drawing.Color.LightYellow;
+            this.btnAbrirTeleconsulta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAbrirTeleconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAbrirTeleconsulta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrirTeleconsulta.Location = new System.Drawing.Point(190, 127);
+            this.btnAbrirTeleconsulta.Name = "btnAbrirTeleconsulta";
+            this.btnAbrirTeleconsulta.Size = new System.Drawing.Size(175, 86);
+            this.btnAbrirTeleconsulta.TabIndex = 8;
+            this.btnAbrirTeleconsulta.Text = "Abrir Teleconsulta";
+            this.btnAbrirTeleconsulta.UseVisualStyleBackColor = false;
+            this.btnAbrirTeleconsulta.Click += new System.EventHandler(this.btnAbrirTeleconsulta_Click);
             // 
-            // button2
+            // btnAgendarTeleConsulta
             // 
-            this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(371, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 86);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Agendar Teleconsulta";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAgendarTeleConsulta.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAgendarTeleConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgendarTeleConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgendarTeleConsulta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendarTeleConsulta.Location = new System.Drawing.Point(371, 12);
+            this.btnAgendarTeleConsulta.Name = "btnAgendarTeleConsulta";
+            this.btnAgendarTeleConsulta.Size = new System.Drawing.Size(175, 86);
+            this.btnAgendarTeleConsulta.TabIndex = 7;
+            this.btnAgendarTeleConsulta.Text = "Agendar Teleconsulta";
+            this.btnAgendarTeleConsulta.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnAgendarConsulta
             // 
-            this.button1.BackColor = System.Drawing.Color.PaleGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(190, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 86);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Agendar Consulta";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAgendarConsulta.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnAgendarConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgendarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgendarConsulta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendarConsulta.Location = new System.Drawing.Point(190, 12);
+            this.btnAgendarConsulta.Name = "btnAgendarConsulta";
+            this.btnAgendarConsulta.Size = new System.Drawing.Size(175, 86);
+            this.btnAgendarConsulta.TabIndex = 6;
+            this.btnAgendarConsulta.Text = "Agendar Consulta";
+            this.btnAgendarConsulta.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -104,10 +105,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(568, 412);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAbrirPrescricao);
+            this.Controls.Add(this.btnAbrirTeleconsulta);
+            this.Controls.Add(this.btnAgendarTeleConsulta);
+            this.Controls.Add(this.btnAgendarConsulta);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPaciente";
@@ -119,10 +120,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAbrirPrescricao;
+        private System.Windows.Forms.Button btnAbrirTeleconsulta;
+        private System.Windows.Forms.Button btnAgendarTeleConsulta;
+        private System.Windows.Forms.Button btnAgendarConsulta;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
