@@ -46,7 +46,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.cbTipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastroUsuario)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -160,6 +160,7 @@
             this.dgvCadastroUsuario.RowHeadersWidth = 62;
             this.dgvCadastroUsuario.Size = new System.Drawing.Size(429, 150);
             this.dgvCadastroUsuario.TabIndex = 8;
+            this.dgvCadastroUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCadastroUsuario_CellClick);
             // 
             // groupBox1
             // 
@@ -263,14 +264,20 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // txtTipo
+            // cbTipo
             // 
-            this.txtTipo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.Location = new System.Drawing.Point(235, 245);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(206, 26);
-            this.txtTipo.TabIndex = 26;
+            this.cbTipo.FormattingEnabled = true;
+            this.cbTipo.Items.AddRange(new object[] {
+            "",
+            "Administrador",
+            "Paciente",
+            "Profissional da saúde",
+            "Recepção",
+            "Telefonia"});
+            this.cbTipo.Location = new System.Drawing.Point(235, 245);
+            this.cbTipo.Name = "cbTipo";
+            this.cbTipo.Size = new System.Drawing.Size(206, 26);
+            this.cbTipo.TabIndex = 26;
             // 
             // frmCadastroUsuario
             // 
@@ -278,7 +285,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(452, 500);
-            this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
@@ -329,6 +336,6 @@
         private System.Windows.Forms.RadioButton rbTipo;
         private System.Windows.Forms.RadioButton rbNome;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.ComboBox cbTipo;
     }
 }

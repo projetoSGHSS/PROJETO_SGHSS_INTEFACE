@@ -56,27 +56,13 @@ namespace projetoSGHSS
             }
         }
 
-        //para selecionar a linha na dgv, ao clicar nela
-        private int? _idSelecionado = null;
-        private void dgvCadastroUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex < 0) return;
-            DataGridViewRow linha = dgvCadastroUsuario.Rows[e.RowIndex];
-
-            _idSelecionado = (int)linha.Cells["id"].Value;
-            txtNomeUsuario.Text = linha.Cells["nome"].Value?.ToString();
-            txtEmailUsuario.Text = linha.Cells["email"].Value?.ToString();
-            txtSenhaHashUsuario.Text = linha.Cells["senhaHash"].Value?.ToString();
-            txtTipo.Text = linha.Cells["tipo"].Value?.ToString();
-        }
-
         private async void btnSalvar_Click(object sender, EventArgs e)
         {
             // 1. Validações simples de campos obrigatórios
             if (string.IsNullOrWhiteSpace(txtNomeUsuario.Text) ||
                 string.IsNullOrWhiteSpace(txtEmailUsuario.Text) ||
                 string.IsNullOrWhiteSpace(txtSenhaHashUsuario.Text) ||
-                string.IsNullOrWhiteSpace(txtTipo.Text))
+                string.IsNullOrWhiteSpace(cbTipo.Text))
             {
                 MessageBox.Show("Preencha todos os campos.", "Campos faltando", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -86,10 +72,11 @@ namespace projetoSGHSS
             //Os nomes devem estar extamente iguais na API
             var novoUsuario = new
             {
-                NomeUsuario = txtNomeUsuario.Text.Trim(),
-                EmailUsuario = txtEmailUsuario.Text,
-                SenhaUsuario = txtSenhaHashUsuario.Text.Trim(),
-                TipoUsuario = txtTipo.Text
+                nome = txtNomeUsuario.Text.Trim(),
+                email = txtEmailUsuario.Text,
+                senhaHash = txtSenhaHashUsuario.Text.Trim(),
+                tipo = cbTipo.Text
+
             };
 
             string apiPostUrl = apiRotasController.CadastroUsuario;
@@ -147,17 +134,18 @@ namespace projetoSGHSS
             // 2) Monta objeto com os campos (use os nomes esperados pela API)
             var usuarioAtualizado = new
             {
-                NomeUsuario = txtNomeUsuario.Text.Trim(),
-                EmailUsuario = txtEmailUsuario.Text,
-                SenhaUsuario = txtSenhaHashUsuario.Text.Trim(),
-                TipoUsuario = txtTipo.Text
+                nome = txtNomeUsuario.Text.Trim(),
+                email = txtEmailUsuario.Text,
+                senhaHash = txtSenhaHashUsuario.Text.Trim(),
+                tipo = cbTipo.Text
+
             };
 
             // 3) Validação mínima (exemplo)
-            if (string.IsNullOrWhiteSpace(usuarioAtualizado.NomeUsuario) ||
-                string.IsNullOrWhiteSpace(usuarioAtualizado.EmailUsuario) ||
-                string.IsNullOrWhiteSpace(usuarioAtualizado.SenhaUsuario) ||
-                string.IsNullOrWhiteSpace(usuarioAtualizado.TipoUsuario))
+            if (string.IsNullOrWhiteSpace(usuarioAtualizado.nome) ||
+                string.IsNullOrWhiteSpace(usuarioAtualizado.email) ||
+                string.IsNullOrWhiteSpace(usuarioAtualizado.senhaHash) ||
+                string.IsNullOrWhiteSpace(usuarioAtualizado.tipo))
             {
                 MessageBox.Show("Preencha todos os campos antes de salvar.", "Campos faltando", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -231,6 +219,7 @@ namespace projetoSGHSS
                     {
                         MessageBox.Show("Usuário excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                        LimparCampos();
                         // 4) Recarregar a grade chamando seu GET
                         await CarregarDados();
                     }
@@ -260,8 +249,24 @@ namespace projetoSGHSS
             txtNomeUsuario.Clear();
             txtEmailUsuario.Clear();
             txtSenhaHashUsuario.Clear();
-            txtTipo.Clear();
+            cbTipo.SelectedIndex = 0;
             txtNomeUsuario.Focus();
+        }
+
+        //para selecionar a linha na dgv, ao clicar nela
+        private int? _idSelecionado = null;
+
+        private void dgvCadastroUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+            DataGridViewRow linha = dgvCadastroUsuario.Rows[e.RowIndex];
+
+            _idSelecionado = (int)linha.Cells["id"].Value;
+            txtNomeUsuario.Text = linha.Cells["nome"].Value?.ToString();
+            txtEmailUsuario.Text = linha.Cells["email"].Value?.ToString();
+            txtSenhaHashUsuario.Text = linha.Cells["senhaHash"].Value?.ToString();
+            cbTipo.Text = linha.Cells["tipo"].Value?.ToString();
+
         }
     }
 }
